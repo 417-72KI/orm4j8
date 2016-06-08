@@ -13,7 +13,7 @@ orm4j8はJava8向けのORマッピングライブラリです。
 * HasOne
 * HasMany
 
-## 使い方
+## 導入方法
 
 ### gradleプロジェクト
 
@@ -32,7 +32,7 @@ compile 'jp.natsukishina.orm4j8:orm4j8:1.0.0'
 * https://github.com/417-72KI/orm4j8/raw/master/repos/jp/natsukishina/orm4j8/orm4j8/1.0.0/orm4j8-1.0.0.jar
   をダウンロードし、ビルドパスに加える
 
-## 依存ライブラリ
+## その他必要なライブラリ
 
 * MySQLを使用する場合  mysql-connector-java-*-bin.jar
 * PostgreSQLを使用する場合  postgresql-*.jar
@@ -42,6 +42,10 @@ compile 'jp.natsukishina.orm4j8:orm4j8:1.0.0'
 * PostgreSQLでの動作確認
 * Oracle対応
 * cascade対応
+
+## JavaDoc
+
+[Ver 1.0.0](http://417-72ki.github.io/CSVMapper/javadoc/1.0.0/)
 
 ## ライセンス
 
