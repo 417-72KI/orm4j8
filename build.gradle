@@ -1,0 +1,58 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+def defaultEncoding = 'UTF-8'
+[compileJava, compileTestJava]*.options*.encoding = defaultEncoding
+
+repositories {
+    jcenter()
+}
+
+javadoc {
+    options.charSet = 'UTF-8'
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.12'
+
+    testCompile 'junit:junit:4.12'
+    testCompile fileTree(dir: 'testlib', includes: ['*.jar'])
+}
+
+// settings for maven
+group = 'jp.natsukishina.orm4j8'
+archivesBaseName = 'orm4j8'
+version = '1.0.0'
+
+task javadocJar(type: Jar, dependsOn:javadoc) {
+	classifier = 'javadoc'
+	from javadoc.destinationDir
+	exclude 'src/test/*.java'
+}
+
+artifacts {
+	archives javadocJar
+}
+
+uploadArchives {
+	repositories {
+		mavenDeployer {
+			repository(url: "file:${projectDir}/repos")
+		}
+	}
+}
+
+[install.repositories.mavenInstaller, uploadArchives.repositories.mavenDeployer]*.pom*.whenConfigured { pom ->
+	pom.project {
+		inceptionYear '2012'
+		packaging 'jar'
+		licenses {
+			license {
+				name 'The MIT License (MIT)'
+				url 'http://opensource.org/licenses/mit-license.php'
+				distribution 'repo'
+			}
+		}
+	}
+}
