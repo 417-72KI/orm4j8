@@ -15,6 +15,8 @@ orm4j8はJava8向けのORマッピングライブラリです。
 
 ## 使い方
 
+### gradleプロジェクト
+
 * repositoriesブロック内に下記を追加
 ```
 maven {
@@ -25,6 +27,10 @@ maven {
 ```
 compile 'jp.natsukishina.orm4j8:orm4j8:1.0.0'
 ```
+
+### 一般的なJavaプロジェクト
+* https://github.com/417-72KI/orm4j8/raw/master/repos/jp/natsukishina/orm4j8/orm4j8/1.0.0/orm4j8-1.0.0.jar
+  をダウンロードし、ビルドパスに加える
 
 ## 依存ライブラリ
 
