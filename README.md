@@ -7,7 +7,11 @@ orm4j8はJava8向けのORマッピングライブラリです。
 
 ## 機能
 
-準備中...
+* 基本的なCRUD
+* 主キー検索
+* メソッドチェーンによるクエリ生成
+* HasOne
+* HasMany
 
 ## 使い方
 
@@ -30,8 +34,8 @@ compile 'jp.natsukishina.orm4j8:orm4j8:1.0.0'
 ## TODO
 
 * PostgreSQLでの動作確認
-* HasOneの実装
 * Oracle対応
+* cascade対応
 
 ## ライセンス
 

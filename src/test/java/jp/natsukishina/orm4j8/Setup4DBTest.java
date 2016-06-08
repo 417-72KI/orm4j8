@@ -41,6 +41,7 @@ public class Setup4DBTest {
 	static final int insertRow = 10;
 	static final int manyRow = 3;
 
+	@SuppressWarnings("deprecation")
 	static void createTables() {
 		StringBuilder sql = new StringBuilder("create table ");
 		sql.append(DBUtil.getTableName(TestData.class));
@@ -83,6 +84,7 @@ public class Setup4DBTest {
 		DB.rawQuery(HasManyTestData.class, sql.toString()).execute();
 }
 
+	@SuppressWarnings("deprecation")
 	static void dropTables() {
 		StringBuilder sql = new StringBuilder("drop table if exists ");
 		sql.append(DBUtil.getTableName(TestData.class));
@@ -102,6 +104,7 @@ public class Setup4DBTest {
 		DB.rawQuery(HasOneHasOneTestData.class, sql.toString()).execute();
 	}
 
+	@SuppressWarnings("deprecation")
 	static void insertTestRecords() {
 		IntStream.range(0, insertRow).forEach(idx -> {
 			StringBuilder sql = new StringBuilder("insert into ");
@@ -155,7 +158,7 @@ public class Setup4DBTest {
 			sql.append("name");
 			sql.append(idx + 1);
 			sql.append("', ");
-			sql.append(((int) (idx / manyRow) + 1));
+			sql.append((idx / manyRow + 1));
 			sql.append(", '");
 			sql.append("fuga");
 			sql.append("');");
@@ -163,6 +166,7 @@ public class Setup4DBTest {
 		});
 	}
 
+	@SuppressWarnings("deprecation")
 	static void deleteTestRecords() {
 		StringBuilder sql = new StringBuilder("delete from ");
 		sql.append(DBUtil.getTableName(TestData.class));
