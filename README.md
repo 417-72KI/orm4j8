@@ -20,7 +20,7 @@ orm4j8はJava8向けのORマッピングライブラリです。
 * repositoriesブロック内に下記を追加
 ```
 maven {
-	url 'https://github.com/417-72KI/CSVMapper/raw/master/repos'
+	url 'https://github.com/417-72KI/orm4j8/raw/master/repos'
 }
 ```
 * dependenciesブロック内に下記を追加
