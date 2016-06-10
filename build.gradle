@@ -21,7 +21,7 @@ dependencies {
 }
 
 // settings for maven
-group = 'jp.natsukishina.orm4j8'
+group = 'jp.natsukishina'
 archivesBaseName = 'orm4j8'
 version = '1.0.0'
 

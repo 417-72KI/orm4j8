@@ -25,7 +25,7 @@ maven {
 ```
 * dependenciesブロック内に下記を追加
 ```
-compile 'jp.natsukishina.orm4j8:orm4j8:1.0.0'
+compile 'jp.natsukishina:orm4j8:1.0.0'
 ```
 
 ### 一般的なJavaプロジェクト
