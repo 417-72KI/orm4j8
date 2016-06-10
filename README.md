@@ -43,6 +43,10 @@ compile 'jp.natsukishina:orm4j8:1.0.0'
 * Oracle対応
 * cascade対応
 
+## JavaDoc
+
+[Ver 1.0.0](http://417-72ki.github.io/orm4j8/javadoc/1.0.0/)
+
 ## ライセンス
 
 Copyright &copy; 2016 417.72KI
