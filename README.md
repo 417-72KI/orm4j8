@@ -34,7 +34,7 @@ compile 'jp.natsukishina:orm4j8:1.0.0'
 
 ```xml
 <repository>
-	<id>CSVMapper</id>
+	<id>orm4j8</id>
 	<url>https://github.com/417-72KI/orm4j8/raw/master/repos/</url>
 </repository>
 ```
