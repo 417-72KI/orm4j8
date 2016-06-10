@@ -1,6 +1,0 @@
-{
-  "name": "Orm4j8",
-  "tagline": "",
-  "body": "# orm4j8\r\n\r\n## 概要\r\n\r\norm4j8はJava8向けのORマッピングライブラリです。\r\n現在はMySQL、PostgreSQLに対応しています。\r\n\r\n## 機能\r\n\r\n* 基本的なCRUD\r\n* 主キー検索\r\n* メソッドチェーンによるクエリ生成\r\n* HasOne\r\n* HasMany\r\n\r\n## 導入方法\r\n\r\n### gradleプロジェクト\r\n\r\n* repositoriesブロック内に下記を追加\r\n```\r\nmaven {\r\n\turl 'https://github.com/417-72KI/orm4j8/raw/master/repos'\r\n}\r\n```\r\n* dependenciesブロック内に下記を追加\r\n```\r\ncompile 'jp.natsukishina:orm4j8:1.0.0'\r\n```\r\n\r\n### 一般的なJavaプロジェクト\r\n* https://github.com/417-72KI/orm4j8/raw/master/repos/jp/natsukishina/orm4j8/orm4j8/1.0.0/orm4j8-1.0.0.jar\r\n  をダウンロードし、ビルドパスに加える\r\n\r\n## その他必要なライブラリ\r\n\r\n* MySQLを使用する場合  mysql-connector-java-*-bin.jar\r\n* PostgreSQLを使用する場合  postgresql-*.jar\r\n\r\n## TODO\r\n\r\n* PostgreSQLでの動作確認\r\n* Oracle対応\r\n* cascade対応\r\n\r\n## ライセンス\r\n\r\nCopyright &copy; 2016 417.72KI\r\nLicensed under the [MIT License][mit].\r\n\r\n[MIT]: http://www.opensource.org/licenses/mit-license.php\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
