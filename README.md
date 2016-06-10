@@ -18,14 +18,33 @@ orm4j8はJava8向けのORマッピングライブラリです。
 ### gradleプロジェクト
 
 * repositoriesブロック内に下記を追加
-```
+```groovy
 maven {
 	url 'https://github.com/417-72KI/orm4j8/raw/master/repos'
 }
 ```
 * dependenciesブロック内に下記を追加
-```
+```groovy
 compile 'jp.natsukishina:orm4j8:1.0.0'
+```
+
+### Maven
+
+* repositoriesブロック内に下記を追加
+
+```xml
+<repository>
+	<id>CSVMapper</id>
+	<url>https://github.com/417-72KI/orm4j8/raw/master/repos/</url>
+</repository>
+```
+* dependenciesブロック内に下記を追加
+```xml
+<dependency>
+	<groupId>jp.natsukishina</groupId>
+	<artifactId>orm4j8</artifactId>
+	<version>1.0.0</version>
+</dependency>
 ```
 
 ### 一般的なJavaプロジェクト
